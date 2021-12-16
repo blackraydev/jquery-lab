@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: rgb(240, 240, 245);
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todos_table {
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+}
+
+button { 
+  transition: 0.2s;
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 15px 30px;
+  background: white;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:disabled {
+  cursor: unset;
+  background: rgb(120, 120, 130);
+  color: rgb(160, 160, 170);
+}
+
+th, td {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgb(240, 240, 245);
+}
+
+.todo_id, .todo_completed {
+  width: 100px;
+}
+
+.todo_title {
+  text-align: start;
+}
